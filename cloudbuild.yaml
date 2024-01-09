@@ -1,5 +1,5 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-        args: ['build', '-t', 'gcr.io/grounded-camp-410709/pytorch-latest', '.']
+        args: ['build', '-t', 'gcr.io/grounded-camp-410709/pytorch-latest-cpu', '.']
     - name: 'gcr.io/cloud-builders/docker'
-        args: ['push', 'gcr.io/grounded-camp-410709/pytorch-latest']
+        args: ['push', 'gcr.io/grounded-camp-410709/pytorch-latest-cpu']
